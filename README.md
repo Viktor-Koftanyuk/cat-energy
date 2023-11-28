@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Виктор Кофтанюк](https://up.htmlacademy.ru/adaptive/30/user/2414113).
-* Наставник: `Неизвестно`.
+- Студент: [Виктор Кофтанюк](https://up.htmlacademy.ru/adaptive/30/user/2414113).
+- Наставник: [Александр Медведев](https://htmlacademy.ru/profile/exteep).
 
 ---
 
