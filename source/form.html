@@ -97,93 +97,97 @@
     </div>
   </header>
   <main class="main-container">
-    <div class="container">
-      <h1 class="form-title title-xl">Подбор программы</h1>
-      <p class="form-text">Заполните анкету, и мы подберем
-        программу питания для вашего кота</p>
-      <form action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset>
-          <legend class="visually-hidden">Данные о питомце</legend>
-          <label for="name">ИМЯ:*</label>
-          <input type="text" id="name" name="name" placeholder="барсик" required>
-          <label for="weight-info">Вес (кг):*</label>
-          <input type="number" id="weight-info" name="weight" placeholder="7" required>
-          <label for="age">Возраст (лет):</label>
-          <input type="number" id="age" name="age" placeholder="7" required>
-        </fieldset>
-        <fieldset>
-          <legend class="visually-hidden">Выбор программы</legend>
-          <ul>
-            <li>
-              <input type="radio" id="skinny" name="program" value="skinny" checked>
-              <label for="skinny">похудение</label>
-            </li>
-            <li>
-              <input type="radio" id="mass" name="program" value="mass">
-              <label for="mass">Набор массы</label>
-            </li>
-            <li>
-              <input type="radio" id="ignorant" name="program" value="ignorant">
-              <label for="ignorant">Не знаю (Нужен ваш совет)</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend class="title-small">Контактные данные (владельца кота)</legend>
-          <label for="email">E-mail:*</label>
-          <input type="email" id="email" name="email" placeholder="кuklachev@gmail.com" required>
-          <label for="tel">Телефон:*</label>
-          <input type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" required>
-        </fieldset>
-        <fieldset>
-          <legend class="title-small">Комментарий</legend>
-          <textarea id="" cols="30" rows="10" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-        </fieldset>
-        <fieldset>
-          <legend class="title-small">Дополнительно</legend>
-          <ul>
-            <li>
-              <input type="checkbox" id="sweetener" name="sweetener">
-              <label for="sweetener">сахарозаменитель</label>
-            </li>
-            <li>
-              <input type="checkbox" id="water" name="water">
-              <label for="water">питьевая вода</label>
-            </li>
-            <li>
-              <input type="checkbox" id="milk" name="milk">
-              <label for="milk">молоко</label>
-            </li>
-            <li>
-              <input type="checkbox" id="vitamin" name="vitamins">
-              <label for="vitamin">витамины</label>
-            </li>
-          </ul>
-        </fieldset>
-        <button type="submit">отправить заявку</button>
-        <span>* — Обязательные поля</span>
-      </form>
-      <section class="map">
-        <div class="container">
-          <p class="map__text">приглашаем к сотрудничеству дилеров!</p>
-          <address class="map__address">ул. Большая
-            Конюшенная, д. 19/8
-            Санкт-Петербург</address>
+    <section class="form">
+      <div class="container">
+        <h1 class="form-title title-xl">Подбор программы</h1>
+        <p class="form-text">Заполните анкету, и мы подберем
+          программу питания для вашего кота</p>
+        <form action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset>
+            <legend class="visually-hidden">Данные о питомце</legend>
+            <label for="name">ИМЯ:*</label>
+            <input type="text" id="name" name="name" placeholder="барсик" required>
+            <label for="weight-info">Вес (кг):*</label>
+            <input type="number" id="weight-info" name="weight" placeholder="7" required>
+            <label for="age">Возраст (лет):</label>
+            <input type="number" id="age" name="age" placeholder="7" required>
+          </fieldset>
+          <fieldset>
+            <legend class="visually-hidden">Выбор программы</legend>
+            <ul>
+              <li>
+                <input type="radio" id="skinny" name="program" value="skinny" checked>
+                <label for="skinny">похудение</label>
+              </li>
+              <li>
+                <input type="radio" id="mass" name="program" value="mass">
+                <label for="mass">Набор массы</label>
+              </li>
+              <li>
+                <input type="radio" id="ignorant" name="program" value="ignorant">
+                <label for="ignorant">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend class="title-small">Контактные данные (владельца кота)</legend>
+            <label for="email">E-mail:*</label>
+            <input type="email" id="email" name="email" placeholder="кuklachev@gmail.com" required>
+            <label for="tel">Телефон:*</label>
+            <input type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+          </fieldset>
+          <fieldset>
+            <legend class="title-small">Комментарий</legend>
+            <textarea id="" cols="30" rows="10" name="comment"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset>
+            <legend class="title-small">Дополнительно</legend>
+            <ul>
+              <li>
+                <input type="checkbox" id="sweetener" name="sweetener">
+                <label for="sweetener">сахарозаменитель</label>
+              </li>
+              <li>
+                <input type="checkbox" id="water" name="water">
+                <label for="water">питьевая вода</label>
+              </li>
+              <li>
+                <input type="checkbox" id="milk" name="milk">
+                <label for="milk">молоко</label>
+              </li>
+              <li>
+                <input type="checkbox" id="vitamin" name="vitamins">
+                <label for="vitamin">витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">отправить заявку</button>
+          <span>* — Обязательные поля</span>
+        </form>
+      </div>
+    </section>
+    <section class="map">
+      <div class="container">
+        <p class="map__text">приглашаем к сотрудничеству дилеров!</p>
+        <address class="map__address">ул. Большая
+          Конюшенная, д. 19/8
+          Санкт-Петербург</address>
 
-          <!-- https://yandex.ru/maps/-/CDe~n0lO Ссылка от карты -->
-          <!-- (себе) обязательно потом настроить -->
-          <div style="position:relative;overflow:hidden;"><a
-              href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
-              style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a
-              href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSUYAQFtjfXVyeXpgZQ==/?ll=30.325318%2C59.939334&utm_medium=mapframe&utm_source=maps&z=16.29"
-              style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты — транспорт, навигация, поиск
-              мест</a><iframe
-              src="https://yandex.ru/map-widget/v1/?ll=30.325318%2C59.939334&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=16.29"
-              width="320" height="362" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
-          <!-- ---------------- -->
+        <!-- https://yandex.ru/maps/-/CDe~n0lO Ссылка от карты -->
+        <!-- (себе) обязательно потом настроить -->
+        <div style="position:relative;overflow:hidden;"><a
+            href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
+            style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a
+            href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSUYAQFtjfXVyeXpgZQ==/?ll=30.325318%2C59.939334&utm_medium=mapframe&utm_source=maps&z=16.29"
+            style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты — транспорт, навигация, поиск
+            мест</a><iframe
+            src="https://yandex.ru/map-widget/v1/?ll=30.325318%2C59.939334&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=16.29"
+            width="320" height="362" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        <!-- ---------------- -->
 
-        </div>
-      </section>
+      </div>
+    </section>
     </div>
   </main>
   <footer class="main-footer">
