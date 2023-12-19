@@ -1,0 +1,48 @@
+.form {
+  padding: 27px 0 32px;
+}
+
+.form__text {
+  font-family: $primary-font;
+  text-transform: uppercase;
+}
+
+.form__list {
+  padding: 0;
+  list-style: none;
+}
+
+.form__label {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.form__input {
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.form__textarea {
+  font-family: $primary-font;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-align: center;
+  width: 280px;
+  height: 150px;
+  resize: none;
+}
+
+.form__button {
+  display: block;
+}
+
+.form__warning {
+  font-family: $secondary-font;
+  line-height: 16px;
+}
