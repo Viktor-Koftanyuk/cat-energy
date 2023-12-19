@@ -1,0 +1,21 @@
+.hero {
+  color: #ffffff;
+  margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    color: $color-basis;
+  }
+}
+
+.hero__title {
+  text-align: center;
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.hero__text {
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  background-color: rgba(104, 183, 56, 0.85);
+}

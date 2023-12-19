@@ -1,0 +1,19 @@
+.text {
+  font-family: $secondary-font;
+  margin: 0;
+  padding: 0;
+  color: #444444;
+  font-weight: 400;
+}
+
+.text--min {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.text--expenses {
+  margin: 0;
+  font-family: $primary-font;
+  line-height: 20px;
+  color: #000000;
+}
