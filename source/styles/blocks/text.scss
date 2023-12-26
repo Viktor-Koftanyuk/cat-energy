@@ -2,7 +2,7 @@
   font-family: $secondary-font;
   margin: 0;
   padding: 0;
-  color: #444444;
+  color: $dark-grey;
   font-weight: 400;
 }
 
@@ -15,5 +15,5 @@
   margin: 0;
   font-family: $primary-font;
   line-height: 20px;
-  color: #000000;
+  color: $color-basis;
 }

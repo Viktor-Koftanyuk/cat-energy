@@ -1,4 +1,41 @@
 .input-wrapper {
   display: flex;
+  align-items: center;
   gap: 13px;
+}
+
+.input-wrapper__email,
+.input-wrapper__phone {
+  position: relative;
+  width: 100%;
+}
+
+.input-wrapper__email::after {
+  content: " ";
+  position: absolute;
+  top: 14px;
+  right: 13px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  mask-image: url("../../images/icons/stack.svg#icon-email");
+  mask-size: 20px 20px;
+  mask-repeat: no-repeat;
+  background-color: #222222;
+  z-index: 1;
+}
+
+.input-wrapper__phone::after {
+  content: " ";
+  position: absolute;
+  top: 14px;
+  right: 13px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  mask-image: url("../../images/icons/stack.svg#icon-phone");
+  mask-size: 20px 20px;
+  mask-repeat: no-repeat;
+  background-color: #222222;
+  z-index: 1;
 }
