@@ -7,6 +7,9 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .main-nav__link {
@@ -15,4 +18,13 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $color-basis;
+  display: flex;
+  align-items: center;
+  min-height: 70px;
+  min-width: 320px;
+  justify-content: center;
+}
+
+.main-nav__link:hover {
+  opacity: 0.6;
 }
