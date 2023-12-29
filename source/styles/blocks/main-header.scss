@@ -2,11 +2,21 @@
   padding: 0;
 }
 
+.main-header__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
 .main-header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0 25px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .main-header__logo {
@@ -14,6 +24,12 @@
   justify-content: space-between;
   align-items: center;
   min-width: 200px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 0;
+    gap: 13px;
+    justify-content: flex-start;
+  }
 }
 
 .main-header__logo:hover img {
