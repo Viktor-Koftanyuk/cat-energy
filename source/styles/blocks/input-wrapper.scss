@@ -1,16 +1,13 @@
 .input-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 13px;
-}
-
-.input-wrapper__email,
-.input-wrapper__phone {
-  position: relative;
   width: 100%;
 }
 
-.input-wrapper__email::after {
+.input-wrapper--email,
+.input-wrapper--phone {
+  position: relative;
+}
+
+.input-wrapper--email::after {
   content: " ";
   position: absolute;
   top: 14px;
@@ -25,7 +22,7 @@
   z-index: 1;
 }
 
-.input-wrapper__phone::after {
+.input-wrapper--phone::after {
   content: " ";
   position: absolute;
   top: 14px;
@@ -38,4 +35,9 @@
   mask-repeat: no-repeat;
   background-color: #222222;
   z-index: 1;
+  order: -1;
+}
+
+.fieldset-wrapper:focus-visible .input-wrapper--phone::after {
+  background-color: #ffffff;
 }

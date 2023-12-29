@@ -1,6 +1,7 @@
 .hero {
   color: $color-accent;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
+  padding-top: 27px;
 
   @media (min-width: 768px) {
     color: $color-basis;
@@ -10,9 +11,12 @@
 .hero__title {
   text-align: center;
   background-color: rgba(104, 183, 56, 0.85);
+  margin-bottom: 20px;
 }
 
 .hero__text {
+  margin: 0;
+  margin-bottom: 30px;
   font-family: $primary-font;
   font-size: 14px;
   line-height: 14px;

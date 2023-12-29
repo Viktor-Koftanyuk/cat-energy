@@ -2,10 +2,41 @@
   padding: 40px 0;
 }
 
+.main-footer__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-footer__logo {
+  align-self: center;
+}
+
 .main-footer__social-list {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
-  gap: 24px;
+  align-self: center;
+}
+
+.main-footer__social-link {
+  display: block;
+  padding: 20px 12px;
+}
+
+.main-footer__social-link svg {
+  fill: #666666;
+}
+
+.main-footer__social-link:hover svg {
+  fill: $basic-green;
+}
+
+.main-footer__social-link:focus svg {
+  fill: $basic-green;
+}
+
+.main-footer__social-link:active svg {
+  opacity: 0.3;
+  fill: $basic-green;
 }
