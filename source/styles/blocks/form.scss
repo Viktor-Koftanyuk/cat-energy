@@ -1,5 +1,6 @@
 .form {
   padding: 27px 0 32px;
+  overflow: hidden;
 }
 
 .form__text {
@@ -16,6 +17,7 @@
   font-size: 16px;
   text-transform: uppercase;
   color: $dark-grey;
+  max-width: 117px;
 }
 
 .form__input {

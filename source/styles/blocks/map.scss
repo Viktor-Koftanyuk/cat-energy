@@ -16,10 +16,19 @@
   text-transform: uppercase;
   color: #111111;
   max-width: 140px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .map__address {
   font-family: $secondary-font;
   font-style: normal;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    text-align: end;
+  }
 }

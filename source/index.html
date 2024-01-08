@@ -29,6 +29,7 @@
           </picture>
         </a>
         <button class="button-toogle" type="button">
+          <span></span>
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
@@ -57,16 +58,21 @@
   </header>
   <main class="main-container">
     <section class="hero">
-      <div class="container">
-        <h1 class="hero__title title title--xl">Функциональное питание для котов</h1>
-        <p class="hero__text">Занялся собой? Займись котом!</p>
-        <picture>
-          <source type="image/png" media="(min-width: 1440px)" srcset="images/cap-energy-desktop@1x.png 1x, images/cap-energy-desktop@2x.png 2x" width="552" height="499">
-          <source type="image/png" media="(min-width: 768px)" srcset="images/cap-energy-tablet@1x.png 1x, images/cap-energy-tablet@2x.png 2x" width="709" height="609">
-          <img class="hero__image" src="images/cap-energy-mobile@1x.png" srcset="images/cap-energy-mobile@2x.png 2x" width="280" height="270" alt="Стакан корма">
-        </picture>
+      <div class="hero__container container">
+        <div class="hero__wrapper">
+          <h1 class="hero__title title title--xl">Функциональное <br> питание для котов</h1>
+          <p class="hero__text">Занялся собой? Займись котом!</p>
 
+        </div>
         <a class="button hero__link" href="form.html">подобрать программу</a>
+        <div class="hero__image">
+          <picture>
+            <source type="image/png" media="(min-width: 1440px)" srcset="images/cap-energy-desktop@1x.png 1x, images/cap-energy-desktop@2x.png 2x" width="552" height="499">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/cap-energy-tablet@1x.png 1x, images/cap-energy-tablet@2x.png 2x" width="709" height="609">
+            <img src="images/cap-energy-mobile@1x.png" srcset="images/cap-energy-mobile@2x.png 2x" width="280" height="270" alt="Стакан корма">
+          </picture>
+        </div>
+
       </div>
     </section>
     <section class="options">
@@ -95,9 +101,10 @@
     <section class="advantages">
       <div class="container">
         <h2 class="advantages__title title title--xl">Как это работает</h2>
-        <ul class="advantages__list">
+        <ol class="advantages__list">
           <li class="advantages__item advantages__item--leaf">
-            <p class="advantages__text text text--medium">Функциональное питание содержит только полезные питательные
+            <p class="advantages__text text text--medium">Функциональное
+              питание содержит только полезные питательные
               вещества.
             </p>
           </li>
@@ -113,38 +120,50 @@
             <p class="advantages__text text text--medium">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
             </p>
           </li>
-        </ul>
+        </ol>
       </div>
     </section>
     <section class="example">
-      <div class="container">
-        <h2 class="example__title title title--xl">Живой пример</h2>
-        <p class="example__text text text--medium">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
-          Energy Slim Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
-          спит по 16 часов в день.</p>
-        <dl class="stats-list">
-          <div class="stats-list__item">
-            <dt class="stats-list__number">5 КГ</dt>
-            <dd class="stats-list__description text">снижение веса</dd>
+      <div class="container example__container">
+        <div>
+          <h2 class="example__title title title--xl">Живой пример</h2>
+          <p class="example__text text text--medium">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
+            Energy Slim Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
+            спит по 16 часов в день.</p>
+          <div class="example__wrapper">
+            <dl class="stats-list">
+              <div class="stats-list__item">
+                <dt class="stats-list__number">5 КГ</dt>
+                <dd class="stats-list__description text">снижение веса</dd>
+              </div>
+              <div class="stats-list__item">
+                <dt class="stats-list__number">60 ДНЕЙ</dt>
+                <dd class="stats-list__description text">затрачено времени</dd>
+              </div>
+            </dl>
+            <p class="text text--total text--expenses">Затраты на питание: <span>15 000 РУБ.</span> </p>
           </div>
-          <div class="stats-list__item">
-            <dt class="stats-list__number">60 ДНЕЙ</dt>
-            <dd class="stats-list__description text">затрачено времени</dd>
-          </div>
-        </dl>
-        <p class="text text--ntotal text--expenses">Затраты на питание: 15 000 РУБ.</p>
+        </div>
         <div class="stats-wrapper">
-          <picture>
-            <source type="image/png" media="(min-width: 768px)" srcset="images/before-cat@1x.png 1x, images/before-cat@2x.png 2x" width="560" height="512">
-            <img src="images/before-cat-mobile@1x.png" srcset="images/before-cat-mobile@2x.png 2x" alt="Толстый кот" width="280" height="256">
-          </picture>
+          <div class="stats-wrapper__cat stats-wrapper__before">
+            <picture>
+              <source type="image/png" media="(min-width: 768px)" srcset="images/before-cat@1x.png 1x, images/before-cat@2x.png 2x" width="560" height="512">
+              <img src="images/before-cat-mobile@1x.png" srcset="images/before-cat-mobile@2x.png 2x" alt="Толстый кот" width="280" height="256">
+            </picture>
+          </div>
+          <button class="stats-wrapper__slider" type="button">
+            <span class="visually-hidden">Ползунок</span>
+            <svg width="40" height="256" viewBox="0 0 40 256">
+              <use href="../images/icons/stack.svg#slider-control"></use>
+            </svg>
+          </button>
+          <div class="stats-wrapper__cat stats-wrapper__after">
+            <picture>
+              <source type="image/png" media="(min-width: 768px)" srcset="images/after-cat@1x.png 1x, images/after-cat@2x.png 2x" width="560" height="512">
+              <img src="images/after-cat-mobile@1x.png" srcset="images/after-cat-mobile@2x.png 2x" alt="Худой кот" width="280" height="256">
+            </picture>
+          </div>
 
-          <!--  -->
-          <picture>
-            <source type="image/png" media="(min-width: 768px)" srcset="images/after-cat@1x.png 1x, images/after-cat@2x.png 2x" width="560" height="512">
-            <img src="images/after-cat-mobile@1x.png" srcset="images/after-cat-mobile@2x.png 2x" alt="Худой кот" width="280" height="256">
-          </picture>
-          <!--  -->
         </div>
       </div>
     </section>
@@ -154,12 +173,12 @@
         <div class="map__wrapper">
           <p class="map__text">приглашаем к сотрудничеству дилеров!</p>
           <div class="address-wrapper">
-            <address class="map__address">ул. Большая Конюшенная, д. 19/8</address>
+            <address class="map__address">ул. Большая <br> Конюшенная, д. 19/8</address>
             <address class="map__address">Санкт-Петербург</address>
           </div>
         </div>
       </div>
-      <iframe src="https://yandex.ru/map-widget/v1/?ll=30.325318%2C59.939334&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=16.29" style="position:relative; width: 100%; height: 92vh;"></iframe>
+      <iframe src="https://yandex.ru/map-widget/v1/?ll=30.325318%2C59.939334&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=16.29" style="position:relative; width: 100%; height: 60vh;"></iframe>
     </section>
   </main>
   <footer class="main-footer">

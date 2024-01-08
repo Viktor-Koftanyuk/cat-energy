@@ -1,3 +1,38 @@
 .stats-wrapper {
+  position: relative;
   padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 200px;
+    width: 560px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
+}
+
+.stats-wrapper__cat {
+  position: absolute;
+  overflow: hidden;
+}
+
+.stats-wrapper__before {
+  clip-path: inset(0 50% 0  0);
+}
+
+.stats-wrapper__after {
+
+  clip-path: inset(0 0 0 50%);
+}
+
+.stats-wrapper__slider {
+  border: none;
+  background: none;
+  cursor: pointer;
+  z-index: 1;
 }

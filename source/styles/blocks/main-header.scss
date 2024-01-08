@@ -5,6 +5,9 @@
 .main-header__container {
   @media (min-width: $tablet-width) {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
   }
 }
 
@@ -16,6 +19,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    padding: 0;
   }
 }
 

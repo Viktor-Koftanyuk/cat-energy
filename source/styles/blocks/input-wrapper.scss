@@ -1,5 +1,11 @@
 .input-wrapper {
   width: 100%;
+
+  &:focus-within {
+    &::after {
+      background-color: $basic-green;
+    }
+  }
 }
 
 .input-wrapper--email,
