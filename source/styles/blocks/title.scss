@@ -7,10 +7,22 @@
 .title--xl {
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .title--base {
   text-transform: uppercase;
+  font-size: 24px;
+  line-height: 37px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .title--add {

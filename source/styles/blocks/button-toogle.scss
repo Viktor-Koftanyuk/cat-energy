@@ -1,0 +1,38 @@
+.button-toogle {
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  top: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.button-toogle::before,
+.button-toogle::after {
+  content: "";
+  background-color: $color-basis;
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  right: 0;
+}
+
+.button-toogle::before {
+  top: 0;
+}
+
+.button-toogle::after {
+  top: 25px;
+}
+
+.button-toogle span {
+  position: absolute;
+  background-color: $color-basis;
+  width: 25px;
+  height: 2px;
+  right: 0;
+}

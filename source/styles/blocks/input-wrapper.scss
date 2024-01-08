@@ -1,4 +1,49 @@
 .input-wrapper {
-  display: flex;
-  gap: 13px;
+  width: 100%;
+
+  &:focus-within {
+    &::after {
+      background-color: $basic-green;
+    }
+  }
+}
+
+.input-wrapper--email,
+.input-wrapper--phone {
+  position: relative;
+}
+
+.input-wrapper--email::after {
+  content: " ";
+  position: absolute;
+  top: 14px;
+  right: 13px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  mask-image: url("../../images/icons/stack.svg#icon-email");
+  mask-size: 20px 20px;
+  mask-repeat: no-repeat;
+  background-color: #222222;
+  z-index: 1;
+}
+
+.input-wrapper--phone::after {
+  content: " ";
+  position: absolute;
+  top: 14px;
+  right: 13px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  mask-image: url("../../images/icons/stack.svg#icon-phone");
+  mask-size: 20px 20px;
+  mask-repeat: no-repeat;
+  background-color: #222222;
+  z-index: 1;
+  order: -1;
+}
+
+.fieldset-wrapper:focus-visible .input-wrapper--phone::after {
+  background-color: #ffffff;
 }

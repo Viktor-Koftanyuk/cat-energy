@@ -1,7 +1,65 @@
 .example {
   background-color: #eaeaea;
+  padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(180deg, #ffffff 57%, #eaeaea 50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 85px;
+    background: linear-gradient(180deg, #ffffff 26%, #eaeaea 20%);
+  }
+}
+
+.example__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 220px;
+  }
 }
 
 .example__title {
   line-height: 40px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+    margin-bottom: 145px;
+  }
+}
+
+.example__text {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-bottom: 0;
+  }
 }

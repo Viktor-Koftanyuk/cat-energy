@@ -1,13 +1,78 @@
 .advantages {
-  margin-bottom: 53px;
+  padding-bottom: 53px;
+}
+
+.advantages__item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+    gap: 30px;
+    flex-direction: column;
+    max-width: 230px;
+  }
 }
 
 .advantages__title {
   line-height: 40px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 60px;
+  }
 }
 
 .advantages__list {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 135px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 95px;
+  }
+}
+
+.advantages__item::before {
+  content: " ";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: $basic-green;
+  background-size: 25px 28px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.advantages__item--leaf::before {
+  background-image: url("../../images/icons/stack.svg#icon-leaf");
+}
+
+.advantages__item--water::before {
+  background-image: url("../../images/icons/stack.svg#icon-water");
+}
+
+.advantages__item--eat::before {
+  background-image: url("../../images/icons/stack.svg#icon-eat");
+}
+
+.advantages__item--watch::before {
+  background-image: url("../../images/icons/stack.svg#icon-watch");
 }

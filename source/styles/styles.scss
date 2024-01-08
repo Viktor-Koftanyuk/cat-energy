@@ -12,9 +12,10 @@
 @import "./blocks/main-header.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/main-container.scss";
-@import "./blocks/hero.scss";
 @import "./blocks/button.scss";
+@import "./blocks/button-toogle.scss";
 @import "./blocks/title.scss";
+@import "./blocks/hero.scss";
 @import "./blocks/options.scss";
 @import "./blocks/text.scss";
 @import "./blocks/options-card.scss";
@@ -23,11 +24,13 @@
 @import "./blocks/stats-list.scss";
 @import "./blocks/stats-wrapper.scss";
 @import "./blocks/map.scss";
+@import "./blocks/address-wrapper.scss";
 @import "./blocks/main-footer.scss";
 @import "./blocks/academy-link.scss";
 
 // form
 @import "./blocks/form.scss";
+@import "./blocks/fieldset-wrapper.scss";
 @import "./blocks/input-wrapper.scss";
 @import "./blocks/title-small.scss";
 
@@ -36,3 +39,35 @@
 @import "./blocks/catalog-card.scss";
 @import "./blocks/additionally.scss";
 @import "./blocks/additionally-prize.scss";
+
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+legend {
+  position: relative;
+  max-width: 187px;
+}
+
+legend::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 30px);
+  width: 100vw;
+  height: 2px;
+  background-color: $basic-green;
+}
+
+legend::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 20px);
+  width: 100vw;
+  height: 2px;
+  background-color: $basic-green;
+}

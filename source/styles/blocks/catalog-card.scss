@@ -16,8 +16,8 @@
 }
 
 .catalog-card__more {
-  color: #444444;
-  background-color: #f2f2f2;
+  color: $dark-grey;
+  background-color: $basic-grey;
   width: 100%;
   padding: 10px 95px;
 }
@@ -28,5 +28,5 @@
 
 .catalog-card__more:active {
   background-color: #ebebeb;
-  color: #444444;
+  color: $dark-grey;
 }
