@@ -28,6 +28,7 @@
   justify-content: space-between;
   align-items: center;
   min-width: 200px;
+  transition: 0.9s;
 
   @media (min-width: $tablet-width) {
     min-width: 0;
@@ -38,6 +39,7 @@
 
 .main-header__logo:hover img {
   opacity: 0.8;
+  transform: scale(1.1);
 }
 
 .main-header__logo:focus img {

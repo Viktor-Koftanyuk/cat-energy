@@ -15,25 +15,28 @@
 <body class="page__body">
   <header class="main-header">
     <div class="container main-header__container">
-      <a class="main-header__logo" href="index.html">
-        <picture>
-          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop@1x.svg 1x, images/logo-desktop@2x.svg 2x" width="70" height="59">
-          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet@1x.svg 1x, images/logo-tablet@2x.svg 2x" width="60" height="50">
-          <img src="images/logo-mobile@1x.svg" srcset="images/logo-mobile@2x.svg 2x" alt="Логотин" width="33" height="38">
-        </picture>
-        <picture>
-          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop-text@1x.svg 1x, images/logo-desktop-text@2x.svg 2x" width="118" height="21">
-          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet-text@1x.svg 1x, images/logo-tablet-text@2x.svg 2x" width="101" height="18">
-          <img src="images/logo-mobile-text@1x.svg" srcset="images/logo-mobile-text@2x.svg 2x" alt="cat energy" width="101" height="18">
-        </picture>
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toogle" type="button">
+      <div class="main-header__wrapper">
+        <a class="main-header__logo" href="#">
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop@1x.svg 1x, images/logo-desktop@2x.svg 2x" width="70" height="59">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet@1x.svg 1x, images/logo-tablet@2x.svg 2x" width="60" height="50">
+            <img src="images/logo-mobile@1x.svg" srcset="images/logo-mobile@2x.svg 2x" alt="Логотин" width="33" height="38">
+          </picture>
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop-text@1x.svg 1x, images/logo-desktop-text@2x.svg 2x" width="118" height="21">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet-text@1x.svg 1x, images/logo-tablet-text@2x.svg 2x" width="101" height="18">
+            <img src="images/logo-mobile-text@1x.svg" srcset="images/logo-mobile-text@2x.svg 2x" alt="cat energy" width="101" height="18">
+          </picture>
+        </a>
+        <button class="button-toogle" type="button">
+          <span></span>
           <span class="visually-hidden">Открыть меню</span>
         </button>
+      </div>
+      <nav class="main-nav">
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
+          <ul class="main-nav__list main-nav__list--open">
+            <li class="main-nav__item main-nav__item--current">
               <a class="main-nav__link" href="index.html">
                 главная
               </a>
@@ -44,7 +47,7 @@
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--current" href="form.html">
+              <a class="main-nav__link" href="form.html">
                 подбор программы
               </a>
             </li>
@@ -161,7 +164,7 @@
 
   </main>
   <footer class="main-footer">
-    <div class="container">
+    <div class="main-footer__container container">
       <a class="main-footer__logo" href="index.html">
         <span class="visually-hidden">На главную</span>
         <svg width="128" height="24" viewBox="0 0 128 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -202,7 +205,7 @@
           </a>
         </li>
       </ul>
-      <a class="academy-link  main-footer__social-link" href="https://htmlacademy.ru/">HTML Academy
+      <a class="academy-link main-footer__social-link" href="https://htmlacademy.ru/">HTML Academy
         <svg width="27" height="34" viewBox="0 0 28 34">
           <use href="../images/icons/stack.svg#logo-html"></use>
         </svg>
