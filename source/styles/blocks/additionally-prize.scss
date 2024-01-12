@@ -5,6 +5,15 @@
   background-color: #68b738;
   align-items: center;
   padding: 60px 60px 45px;
+
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }
 
 .additionally-prize::before {

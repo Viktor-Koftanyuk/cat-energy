@@ -1,5 +1,11 @@
 .main-header {
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
 }
 
 .main-header__container {
@@ -8,6 +14,10 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
   }
 }
 
@@ -18,7 +28,8 @@
   padding: 20px 0 25px;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    display: flex;
+    gap: 13px;
     padding: 0;
   }
 }
@@ -27,7 +38,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 200px;
   transition: 0.9s;
 
   @media (min-width: $tablet-width) {

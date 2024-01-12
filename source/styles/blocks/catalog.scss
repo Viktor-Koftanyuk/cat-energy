@@ -4,6 +4,10 @@
 
 .catalog__title {
   margin-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 150px;
+  }
 }
 
 .catalog__list {
@@ -21,6 +25,6 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(auto-fill, 245px);
-    gap: 60px;
+    gap: 80px;
   }
 }
