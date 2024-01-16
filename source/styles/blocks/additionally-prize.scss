@@ -2,17 +2,41 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: #68b738;
   align-items: center;
   padding: 60px 60px 45px;
+  background:
+    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    image-set(url("../../images/prize-bg-mobile@1x.jpg") type("image/jpg") 1x,
+    url("../../images/prize-bg-mobile@2x.jpg") type("image/jpg") 2x
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   @media (min-width: $tablet-width) and (max-width: 1439px) {
     flex-direction: row;
     justify-content: space-between;
+    background:
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      image-set(url("../../images/prize-bg-tablet@1x.jpg") type("image/jpg") 1x,
+      url("../../images/prize-bg-tablet@2x.jpg") type("image/jpg") 2x
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 70px 125px 70px 77px;
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    background:
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      image-set(url("../../images/prize-bg-desktop@1x.jpg") type("image/jpg") 1x,
+      url("../../images/prize-bg-desktop@2x.jpg") type("image/jpg") 2x
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
 
@@ -24,7 +48,11 @@
   mask-image: url("../../images/icons/stack.svg#present");
   background-color: $color-accent;
   mask-repeat: no-repeat;
-  top: 60px;
+  margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .additionally-prize__text {
@@ -32,4 +60,8 @@
   line-height: 20px;
   color: $color-accent;
   text-align: center;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    text-align: start;
+  }
 }

@@ -13,6 +13,8 @@
 }
 
 .example__container {
+  padding-bottom: 40px;
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -53,7 +55,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
   }
 
   @media (min-width: $desktop-width) {

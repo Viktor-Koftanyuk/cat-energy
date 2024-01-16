@@ -106,3 +106,17 @@
   background-color: #ebebeb;
   color: $dark-grey;
 }
+
+.catalog-card img {
+  @media (min-width: $desktop-width) {
+    transition: 0.3s;
+    transition-property: filter, transform;
+  }
+}
+
+.catalog-card:hover img {
+  @media (min-width: $desktop-width) {
+    filter: drop-shadow(6px 8px 6px $dark-grey);
+    transform: scale(1.1);
+  }
+}

@@ -1,0 +1,38 @@
+.control-input {
+	margin: 0;
+}
+
+.control-input[type="radio"] + .control-input__mark {
+	border-radius: 50%;
+}
+
+.control-input__mark {
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: 2px solid #cdcdcd;
+	background-color: $color-accent;
+	cursor: pointer;
+	position: absolute;
+}
+
+.control-input[type="radio"]:checked + .control-input__mark::before {
+	width: 13px;
+	height: 13px;
+	position: absolute;
+	top: 7px;
+	left: 6px;
+	background-color: $basic-green;
+	border-radius: 50%;
+	content: "";
+}
+
+.control-input[type="checkbox"]:checked + .control-input__mark::before {
+	content: "";
+	width: 26px;
+	height: 26px;
+	display: block;
+	background-image: url("../../images/icons/stack.svg#mark");
+	background-position: center;
+	background-repeat: no-repeat;
+}

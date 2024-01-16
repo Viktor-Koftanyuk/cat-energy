@@ -6,6 +6,10 @@
   position: relative;
   top: 0;
 
+  &--nojs {
+    visibility: hidden;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }

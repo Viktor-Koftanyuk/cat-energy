@@ -31,8 +31,7 @@
 
 // form
 @import "./blocks/form.scss";
-@import "./blocks/input-radio.scss";
-@import "./blocks/input-checkbox.scss";
+@import "./blocks/control-input.scss";
 @import "./blocks/fieldset-wrapper.scss";
 @import "./blocks/input-wrapper.scss";
 @import "./blocks/title-small.scss";
@@ -49,13 +48,4 @@ fieldset {
   margin: 0;
   padding: 0;
   border: none;
-}
-
-.catalog-card img {
-  transition: 0.3s;
-}
-
-.catalog-card:hover img {
-  filter: drop-shadow(6px 8px 6px $dark-grey);
-  transform: scale(1.1);
 }

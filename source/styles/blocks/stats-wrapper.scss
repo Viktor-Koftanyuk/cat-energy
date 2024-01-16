@@ -1,19 +1,19 @@
 .stats-wrapper {
   position: relative;
-  padding-bottom: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 256px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 200px;
     width: 560px;
+    min-height: 512px;
     margin: 0 auto;
   }
 
-  @media (min-width: $desktop-width) {
-    padding-bottom: 0;
-  }
+  // @media (min-width: $desktop-width) {
+
+  // }
 }
 
 .stats-wrapper__cat {
@@ -35,4 +35,42 @@
   background: none;
   cursor: pointer;
   z-index: 1;
+  position: relative;
+  padding: 0;
+  height: 256px;
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
+  }
+
+  &:hover::before {
+
+    background-color: $basic-green;
+  }
+
+  &:hover svg {
+    color: $basic-green;
+  }
+}
+
+.stats-wrapper__slider svg {
+  color: #666666;
+  margin-left: 2px;
+}
+
+.stats-wrapper__slider::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 256px;
+  background-color: #666666;
+  display: block;
+  left: 50%;
+  top: 0;
+  z-index: -1;
+  border-radius: 4px;
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
+  }
 }

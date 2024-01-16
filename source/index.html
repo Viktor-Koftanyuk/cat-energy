@@ -31,14 +31,14 @@
             <img src="images/logo-mobile-text@1x.svg" srcset="images/logo-mobile-text@2x.svg 2x" alt="cat energy" width="101" height="18">
           </picture>
         </a>
-        <button class="button-toogle" type="button">
+        <button class="button-toogle button-toogle--nojs" type="button">
           <span></span>
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list main-nav__list--open">
+          <ul class="main-nav__list main-nav__list--nojs">
             <li class="main-nav__item main-nav__item--current">
               <a class="main-nav__link main-nav__link--custom" href="index.html">
                 главная
@@ -156,7 +156,7 @@
           </div>
           <button class="stats-wrapper__slider" type="button">
             <span class="visually-hidden">Ползунок</span>
-            <svg width="40" height="256" viewBox="0 0 40 256">
+            <svg width="40" height="40" viewBox="0 0 40 40">
               <use href="../images/icons/stack.svg#slider-control"></use>
             </svg>
           </button>
