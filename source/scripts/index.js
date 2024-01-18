@@ -1,6 +1,6 @@
 /* в этот файл добавляет скрипты*/
 
-// НАВИГАЦИЯ ШАПКИ
+// НАВИГАЦИЯ ШАПКИ(mobile burger menu)
 const navMain = document.querySelector('.main-nav');
 const navToggle = document.querySelector('.button-toogle');
 const navList = document.querySelector('.main-nav__list');
@@ -18,5 +18,3 @@ navToggle.addEventListener('click', () => {
     navMain.classList.remove('main-nav--opened');
   }
 });
-
-

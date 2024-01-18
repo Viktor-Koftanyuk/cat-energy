@@ -72,6 +72,10 @@
       height: 2px;
       background-color: $basic-green;
     }
+
+    &--current-other::after {
+      background-color: $color-accent;
+    }
   }
 }
 
