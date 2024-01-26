@@ -22,6 +22,9 @@
             <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet@1x.svg 1x, images/logo-tablet@2x.svg 2x" width="60" height="50">
             <img src="images/logo-mobile@1x.svg" srcset="images/logo-mobile@2x.svg 2x" alt="Логотин" width="33" height="38">
           </picture>
+
+        </a>
+        <a class="main-header__logo" href="#">
           <picture>
             <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop-text@1x.svg 1x, images/logo-desktop-text@2x.svg 2x" width="118" height="21">
             <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet-text@1x.svg 1x, images/logo-tablet-text@2x.svg 2x" width="101" height="18">
@@ -33,10 +36,10 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed">
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list main-nav__list--open">
-            <li class="main-nav__item main-nav__item--current">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">
                 главная
               </a>
@@ -46,7 +49,7 @@
                 каталог продукции
               </a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item  main-nav__item--current">
               <a class="main-nav__link" href="form.html">
                 подбор программы
               </a>
@@ -88,23 +91,26 @@
             <fieldset class="form__fieldset">
               <legend class="visually-hidden">Выбор программы</legend>
               <ul class="form__list form__list--custom">
-                <li>
-                  <input class="input-radio" type="radio" id="skinny" name="program" value="skinny" checked>
-                  <label class="form__label" for="skinny">похудение</label>
+                <li class="control">
+                  <input class="visually-hidden control__input" type="radio" id="skinny" name="program" value="skinny" checked>
+                  <span class="control__input-mark"></span>
+                  <label class="form__label form__label--custom" for="skinny">похудение</label>
                 </li>
-                <li>
-                  <input class="input-radio" type="radio" id="mass" name="program" value="mass">
-                  <label class="form__label" for="mass">Набор массы</label>
+                <li class="control">
+                  <input class="visually-hidden control__input" type="radio" id="mass" name="program" value="mass">
+                  <span class="control__input-mark"></span>
+                  <label class="form__label form__label--custom" for="mass">Набор массы</label>
                 </li>
-                <li>
-                  <input class="input-radio" type="radio" id="ignorant" name="program" value="ignorant">
-                  <label class="form__label" for="ignorant">Не знаю (Нужен ваш совет)</label>
+                <li class="control">
+                  <input class="visually-hidden control__input" type="radio" id="ignorant" name="program" value="ignorant">
+                  <span class="control__input-mark"></span>
+                  <label class="form__label form__label--custom" for="ignorant">Не знаю (Нужен ваш совет)</label>
                 </li>
               </ul>
             </fieldset>
           </div>
           <fieldset class="form__fieldset form__fieldset--custom">
-            <legend class="title title-small title-line">Контактные данные (владельца кота)</legend>
+            <legend class="title title-small title--line">Контактные данные (владельца кота)</legend>
             <div class="fieldset-wrapper">
               <label class="form__label" for="email">E-mail:*</label>
               <div class="input-wrapper input-wrapper--email">
@@ -119,27 +125,31 @@
             </div>
           </fieldset>
           <fieldset class="form__fieldset">
-            <legend class="title title-small title-line">Комментарий</legend>
+            <legend class="title title-small title--line">Комментарий</legend>
             <textarea class="form__textarea" cols="30" rows="10" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="form__fieldset">
-            <legend class="title title-small title-line">Дополнительно</legend>
+            <legend class="title title-small title--line">Дополнительно</legend>
             <ul class="form__list">
-              <li>
-                <input class="input-checkbox" type="checkbox" id="sweetener" name="sweetener">
-                <label class="form__label" for="sweetener">сахарозаменитель</label>
+              <li class="control">
+                <input class="visually-hidden control__input" type="checkbox" id="sweetener" name="sweetener" checked>
+                <span class="control__input-mark"></span>
+                <label class="form__label form__label--custom" for="sweetener">сахарозаменитель</label>
               </li>
-              <li>
-                <input class="input-checkbox" type="checkbox" id="water" name="water">
-                <label class="form__label" for="water">питьевая вода</label>
+              <li class="control">
+                <input class="visually-hidden control__input" type="checkbox" id="water" name="water">
+                <span class="control__input-mark"></span>
+                <label class="form__label form__label--custom" for="water">питьевая вода</label>
               </li>
-              <li>
-                <input class="input-checkbox" type="checkbox" id="milk" name="milk">
-                <label class="form__label" for="milk">молоко</label>
+              <li class="control">
+                <input class="visually-hidden control__input" type="checkbox" id="milk" name="milk">
+                <span class="control__input-mark"></span>
+                <label class="form__label form__label--custom" for="milk">молоко</label>
               </li>
-              <li>
-                <input class="input-checkbox" type="checkbox" id="vitamin" name="vitamins">
-                <label class="form__label" for="vitamin">витамины</label>
+              <li class="control">
+                <input class="visually-hidden control__input" type="checkbox" id="vitamin" name="vitamins">
+                <span class="control__input-mark"></span>
+                <label class="form__label form__label--custom" for="vitamin">витамины</label>
               </li>
             </ul>
           </fieldset>
@@ -159,7 +169,7 @@
           </div>
         </div>
       </div>
-      <iframe src="https://yandex.ru/map-widget/v1/?ll=30.325318%2C59.939334&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=16.29" style="position:relative; width: 100%; height: 60vh;"></iframe>
+      <iframe src="https://yandex.ru/map-widget/v1/?ll=30.325318%2C59.939334&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=16.29"></iframe>
     </section>
 
   </main>

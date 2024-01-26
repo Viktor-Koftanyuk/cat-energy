@@ -3,7 +3,10 @@
   padding: 25px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 50px 0 40px;
+    background: $color-accent;
+    border: 2px solid $basic-grey;
+    padding: 50px 20px 40px;
+    margin-top: 85px;
   }
 }
 
@@ -26,8 +29,26 @@
 .catalog-more__title {
   min-width: 204px;
   margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .catalog-more__text {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 82px;
+  }
+}
+
+.catalog-more__btn {
+  @media (min-width: $tablet-width) {
+    padding: 10px 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 40px;
+  }
 }

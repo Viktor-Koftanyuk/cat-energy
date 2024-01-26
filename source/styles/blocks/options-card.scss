@@ -9,14 +9,18 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 100%;
     padding: 77px 61px 55px 52px;
   }
 }
 
 .options-card__title {
-  margin-left: 30px;
+  margin-left: 70px;
   margin-bottom: 30px;
-  text-align: center;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     text-align: start;
@@ -25,6 +29,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 70px;
+    align-self: center;
   }
 }
 
