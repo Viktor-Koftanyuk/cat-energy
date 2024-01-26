@@ -1,6 +1,10 @@
 .main-footer {
-  padding: 40px 0;
+  padding: 37px 0 26px;
   background-color: $basic-grey;
+
+  @media (min-width: $desktop-width) {
+    padding: 49px 0 45px;
+  }
 }
 
 .main-footer__container {
@@ -15,6 +19,28 @@
 
 .main-footer__logo {
   align-self: center;
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.main-footer__logo svg {
+  color: #111111;
+}
+
+.main-footer__logo:hover svg {
+  color: $basic-green;
+}
+
+.main-footer__logo:focus-visible svg {
+  color: $basic-green;
+}
+
+.main-footer__logo:active svg {
+  color: $basic-green;
+  opacity: 0.6;
 }
 
 .main-footer__social-list {
@@ -25,7 +51,11 @@
   align-self: center;
 
   @media (min-width: $tablet-width) {
-    margin-right: -60px;
+    margin-right: -40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: -35px;
   }
 }
 
@@ -36,6 +66,7 @@
 
 .main-footer__social-link svg {
   fill: #666666;
+  flex-shrink: 0;
 }
 
 .main-footer__social-link:hover svg {

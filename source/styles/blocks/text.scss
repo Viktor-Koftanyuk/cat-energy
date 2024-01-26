@@ -34,10 +34,11 @@
     align-items: flex-end;
     gap: 9px;
     font-size: 20px;
+    margin-top: 11px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    gap: 60px;
+    gap: 66px;
   }
 }

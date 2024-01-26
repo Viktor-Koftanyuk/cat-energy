@@ -1,5 +1,5 @@
 .main-header {
-  padding: 0;
+  padding: 13px 0 11px;
 
   @media (min-width: $desktop-width) {
     position: absolute;
@@ -13,11 +13,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 25px;
+    padding-top: 3px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 55px;
+    padding-top: 37px;
   }
 }
 
@@ -25,11 +25,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0 25px;
+
 
   @media (min-width: $tablet-width) {
     display: flex;
-    gap: 13px;
+    gap: 18px;
     padding: 0;
   }
 }
@@ -45,6 +45,11 @@
     gap: 13px;
     justify-content: flex-start;
   }
+}
+
+.main-header__logo:nth-child(2) {
+  position: relative;
+  right: 5px;
 }
 
 .main-header__logo:hover img {

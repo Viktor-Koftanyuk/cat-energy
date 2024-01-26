@@ -7,8 +7,31 @@
   line-height: 20px;
   text-decoration: none;
   color: $dark-grey;
+  padding: 15px 0;
 
   @media (min-width: $tablet-width) {
     gap: 23px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 5px;
+  }
+}
+
+.academy-link svg {
+  fill: #666666;
+  flex-shrink: 0;
+}
+
+.academy-link:hover svg {
+  fill: $basic-green;
+}
+
+.academy-link:focus svg {
+  fill: $basic-green;
+}
+
+.academy-link:active svg {
+  opacity: 0.3;
+  fill: $basic-green;
 }

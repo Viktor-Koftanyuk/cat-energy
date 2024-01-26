@@ -1,5 +1,9 @@
 .options {
-  margin: 0;
+  margin-bottom: 23px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 59px;
+  }
 }
 
 .options__list {
@@ -11,5 +15,23 @@
     display: grid;
     grid-template-columns: repeat(2, 570px);
     gap: 80px;
+  }
+}
+
+.options__item:first-child .options-card {
+  @media (max-width: 767px) {
+    padding-top: 29px;
+  }
+}
+
+.options__item:first-child .options-card__title {
+  @media (min-width: $desktop-width) {
+    margin-left: 32px;
+  }
+}
+
+.options__item:last-child .options-card__title {
+  @media (min-width: $desktop-width) {
+    margin-left: 70px;
   }
 }

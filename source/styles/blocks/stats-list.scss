@@ -2,7 +2,7 @@
   margin: 0;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     justify-content: start;
@@ -10,19 +10,19 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 60px;
+    margin-bottom: 49px;
   }
 }
 
 .stats-list__item {
   text-align: center;
   border: 1px solid #cdcdcd;
-  padding: 11px 20px 11px;
+  padding: 12px 20px;
   position: relative;
   border-radius: 5px;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 25px 25px;
+    padding: 12px 20px;
     width: 162px;
   }
 }
@@ -55,9 +55,13 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
-    background: #ffffff;
-    // white-space: nowrap;
-    left: 40px;
+    background: $color-accent;
+    left: 14px;
     bottom: -6px;
+    min-width: 130px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: #eaeaea;
   }
 }

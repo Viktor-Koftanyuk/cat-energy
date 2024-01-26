@@ -1,5 +1,5 @@
 .form {
-  padding: 27px 0 32px;
+  padding: 31px 0 32px;
   overflow: hidden;
 }
 
@@ -18,10 +18,17 @@
   color: $color-basis;
 }
 
+.form__fieldset {
+  padding: 0;
+  border: none;
+  margin: 0;
+  margin-bottom: 11px;
+}
+
 .form__fieldset-wrapper {
+  margin-bottom: 22px;
+
   @media (min-width: $desktop-width) {
-
-
     display: grid;
     grid-template-columns: repeat(2, 570px);
     justify-content: space-between;
@@ -30,8 +37,6 @@
 
 .form__fieldset--custom {
   @media (min-width: $desktop-width) {
-
-
     display: grid;
     grid-template-columns: repeat(2,);
     gap: 80px;
@@ -51,9 +56,10 @@
   margin: 0;
 
   &--custom {
-    padding: 25px 0;
+    padding: 19px 0 17px;
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
+    gap: 5px;
   }
 
   @media (min-width: $tablet-width) {
@@ -71,14 +77,13 @@
       gap: 13px;
     }
   }
-
-  li {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
 }
 
+.form__list li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
 
 .form__label {
   font-size: 16px;
@@ -87,11 +92,15 @@
   // max-width: 117px;
   cursor: pointer;
 
-
   &--custom {
     z-index: 1;
-    padding-left: 50px;
+    // padding-left: 50px;
+    padding: 10px 10px 10px 43px;
   }
+}
+
+.form__label-correction {
+  min-width: 60px;
 }
 
 .form__input {
@@ -100,7 +109,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $dark-grey;
-  padding: 14px 35px 13px 13px;
+  padding: 14px 10px 11px 13px;
   border: 1px solid #cdcdcd;
   min-width: 100%;
 }

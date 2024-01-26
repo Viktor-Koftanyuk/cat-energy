@@ -17,6 +17,7 @@
 }
 
 .control__input[type="radio"]:checked + .control__input-mark::before {
+  content: "";
   width: 13px;
   height: 13px;
   position: absolute;
@@ -24,7 +25,6 @@
   left: 6px;
   background-color: $basic-green;
   border-radius: 50%;
-  content: "";
 }
 
 .control__input[type="checkbox"]:checked + .control__input-mark::before {

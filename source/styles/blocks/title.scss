@@ -29,6 +29,11 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 // ЛИНИЯ ДЛЯ ЗАГОЛОВКА
@@ -44,19 +49,27 @@
 .title--line::before {
   content: "";
   position: absolute;
-  top: 50%;
-  right: calc(100% + 30px);
+  top: 63%;
+  right: calc(100% + 20px);
   width: 100vw;
   height: 2px;
   background-color: $basic-green;
+
+  @media (min-width: $tablet-width) {
+    left: calc(100% + 40px);
+  }
 }
 
 .title--line::after {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 63%;
   left: calc(100% + 20px);
   width: 100vw;
   height: 2px;
   background-color: $basic-green;
+
+  @media (min-width: $tablet-width) {
+    left: calc(100% + 40px);
+  }
 }

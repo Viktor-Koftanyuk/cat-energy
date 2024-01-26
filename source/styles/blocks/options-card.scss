@@ -1,11 +1,12 @@
 .options-card {
   background-color: $basic-grey;
   position: relative;
-  padding: 30px 33px 18px 20px;
+  padding: 37px 33px 18px 20px;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    padding: 77px 315px 57px 52px;
+    padding: 77px 315px 67px 52px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -14,7 +15,7 @@
     justify-content: space-between;
     align-items: flex-start;
     min-height: 100%;
-    padding: 77px 61px 55px 52px;
+    padding: 77px 61px 65px 52px;
   }
 }
 
@@ -25,16 +26,25 @@
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     text-align: start;
     margin-left: 0;
+    margin-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 70px;
+    margin-bottom: 58px;
     align-self: center;
   }
 }
 
 .options-card__text {
-  margin-bottom: 38px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 21px;
+  }
 }
 
 .options-card__link {
@@ -45,10 +55,37 @@
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  transition: 0.2s;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    gap: 25px;
   }
+}
+
+.options-card__link::after {
+  content: "";
+  width: 32px;
+  height: 10px;
+  background-image: url("../../images/icons/stack.svg#icon-arrow");
+  display: block;
+  background-size: 32px 10px;
+  background-position: -8px;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+
+.options-card__link:hover {
+  &::after {
+    background-position: 0;
+  }
+}
+
+.options-card__link:active {
+  opacity: 0.3;
 }
 
 .options-card::before {
@@ -68,9 +105,9 @@
   mask-image: url("../../images/icons/stack.svg#cat-slim");
 
   @media (min-width: $tablet-width) and (max-width: 1439px) {
-    top: 55px;
+    top: 81px;
     left: auto;
-    right: 90px;
+    right: 93px;
     width: 140px;
     height: 195px;
   }
@@ -84,16 +121,16 @@
 }
 
 .options-card--pro::before {
-  top: 35px;
+  top: 40px;
   left: 13px;
   width: 67px;
   height: 28px;
   mask-image: url("../../images/icons/stack.svg#cat-pro");
 
   @media (min-width: $tablet-width) and (max-width: 1439px) {
-    top: 115px;
+    top: 135px;
     left: auto;
-    right: 30px;
+    right: 23px;
     width: 270px;
     height: 110px;
   }
@@ -118,9 +155,9 @@
   border-radius: 50%;
 
   @media (min-width: $tablet-width) and (max-width: 1439px) {
-    top: 70px;
+    top: 93px;
     left: auto;
-    right: 60px;
+    right: 63px;
     width: 200px;
     height: 200px;
   }
@@ -130,5 +167,18 @@
     height: 100px;
     top: 47px;
     left: 50px;
+  }
+}
+
+.options-card--pro::after {
+  top: 29px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    top: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 48px;
+    left: 52px;
   }
 }
