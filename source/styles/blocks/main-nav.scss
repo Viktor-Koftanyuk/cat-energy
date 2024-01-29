@@ -15,9 +15,11 @@
   right: 0;
   width: 100%;
   z-index: 1;
+  top: 62px;
 
   &--nojs {
     position: static;
+    margin-top: 25px;
   }
 
   @media (min-width: $tablet-width) {
@@ -26,6 +28,8 @@
     position: static;
     text-align: center;
     gap: 36px;
+    max-width: 500px;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
@@ -111,4 +115,12 @@
 
 .main-nav__link:hover {
   opacity: 0.6;
+}
+
+.main-nav__link:focus-visible {
+  opacity: 0.6;
+}
+
+.main-nav__link:active {
+  opacity: 0.3;
 }

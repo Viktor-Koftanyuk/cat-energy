@@ -3,4 +3,8 @@
   align-items: center;
   gap: 13px;
   margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }

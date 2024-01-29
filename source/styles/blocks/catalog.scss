@@ -12,6 +12,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 95px;
+    max-width: 450px;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,13 +27,13 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 324px);
+    grid-template-columns: repeat(auto-fit, 324px);
     gap: 72px 60px;
     justify-content: center;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(auto-fill, 245px);
+    grid-template-columns: repeat(auto-fit, 245px);
     gap: 74px 80px;
   }
 }

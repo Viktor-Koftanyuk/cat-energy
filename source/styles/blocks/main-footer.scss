@@ -31,7 +31,7 @@
 }
 
 .main-footer__logo:hover svg {
-  color: $basic-green;
+  color: #3e3e3e;
 }
 
 .main-footer__logo:focus-visible svg {
@@ -39,8 +39,7 @@
 }
 
 .main-footer__logo:active svg {
-  color: $basic-green;
-  opacity: 0.6;
+  color: #6b6b6b;
 }
 
 .main-footer__social-list {
@@ -49,12 +48,10 @@
   list-style: none;
   display: flex;
   align-self: center;
+  flex-wrap: wrap;
+  max-width: 200px;
 
   @media (min-width: $tablet-width) {
-    margin-right: -40px;
-  }
-
-  @media (min-width: $desktop-width) {
     margin-right: -35px;
   }
 }

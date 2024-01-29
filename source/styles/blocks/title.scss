@@ -2,6 +2,7 @@
   font-weight: inherit;
   margin: 0;
   padding: 0;
+  word-wrap: break-word;
 }
 
 .title--xl {
@@ -42,7 +43,7 @@
   max-width: 187px;
 
   @media (min-width: $tablet-width) {
-    max-width: 512px;
+    max-width: 514px;
   }
 }
 
@@ -56,7 +57,7 @@
   background-color: $basic-green;
 
   @media (min-width: $tablet-width) {
-    left: calc(100% + 40px);
+    right: calc(100% + 40px);
   }
 }
 
@@ -72,4 +73,17 @@
   @media (min-width: $tablet-width) {
     left: calc(100% + 40px);
   }
+}
+
+.title--line-custom::before,
+.title--line-custom::after {
+  top: 30%;
+
+  @media (min-width: $tablet-width) {
+    top: 60%;
+  }
+}
+
+.title--legend {
+  margin-bottom: 39px;
 }

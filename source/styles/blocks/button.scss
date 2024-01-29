@@ -9,6 +9,8 @@
   border: none;
   text-transform: uppercase;
   display: inline-block;
+  cursor: pointer;
+  word-wrap: break-word;
 
   &:hover {
     background-color: #5eaa2f;
@@ -23,4 +25,9 @@
     font-size: 20px;
     line-height: 26px;
   }
+}
+
+.button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
 }

@@ -33,6 +33,7 @@
   width: 82px;
   margin: 0 auto;
   margin-bottom: 8px;
+  word-wrap: break-word;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -51,6 +52,7 @@
   bottom: -15px;
   left: 23px;
   background: #eaeaea;
+  word-wrap: break-word;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;

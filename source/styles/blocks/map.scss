@@ -12,6 +12,10 @@
   }
 }
 
+.map__wrapper--form {
+  margin-bottom: 27px;
+}
+
 .map iframe {
   margin: 0;
   padding: 0;
@@ -58,6 +62,7 @@
   text-transform: uppercase;
   color: #111111;
   max-width: 140px;
+  word-wrap: break-word;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -73,6 +78,8 @@
 
   @media (min-width: $tablet-width) {
     text-align: end;
+    max-width: 300px;
+    word-wrap: break-word;
   }
 
   @media (min-width: $desktop-width) {

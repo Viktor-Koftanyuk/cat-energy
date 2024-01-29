@@ -88,3 +88,16 @@
     height: 512px;
   }
 }
+
+.stats-wrapper__slider:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+
+  &::before {
+    background-color: #666666;
+  }
+
+  & svg {
+    color: #666666;
+  }
+}

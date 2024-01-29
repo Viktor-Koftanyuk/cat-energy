@@ -33,3 +33,10 @@ body {
     line-height: 24px;
   }
 }
+
+// для ссылок класс disabled
+a.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+  cursor: default;
+}
