@@ -1,4 +1,6 @@
 /* GLOBAL */
+// Для <a> (ссылок) состояние disabled в global.scss
+// Состояние ERROR input в input-wrapper.scss
 @import "./global/variables.scss";
 @import "./global/mixins.scss";
 @import "./global/fonts.scss";
@@ -32,8 +34,6 @@
 @import "./blocks/form.scss";
 @import "./blocks/control.scss";
 @import "./blocks/fieldset-wrapper.scss";
-
-// состояние для error cнизу input-wrapper.scss
 @import "./blocks/input-wrapper.scss";
 @import "./blocks/title-small.scss";
 
