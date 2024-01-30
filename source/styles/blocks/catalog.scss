@@ -1,8 +1,8 @@
 .catalog {
-  padding: 31px 0 0;
+  padding: 28px 0 0;
 
   @media (min-width: $tablet-width) {
-    padding: 44px 0 0;
+    padding: 42px 0 0;
     margin-bottom: 43px;
   }
 }
@@ -17,6 +17,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 144px;
+    margin-bottom: 99px;
   }
 }
 
@@ -28,7 +29,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(auto-fit, 324px);
-    gap: 72px 60px;
+    gap: 70px 60px;
     justify-content: center;
   }
 

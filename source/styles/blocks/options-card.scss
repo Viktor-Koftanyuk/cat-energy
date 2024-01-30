@@ -1,10 +1,10 @@
 .options-card {
   background-color: $basic-grey;
   position: relative;
-  padding: 37px 33px 18px 20px;
+  padding: 37px 33px 23px 20px;
   margin-bottom: 20px;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     padding: 77px 315px 67px 52px;
     margin-bottom: 30px;
   }
@@ -37,7 +37,7 @@
 }
 
 .options-card__text {
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 58px;
@@ -85,6 +85,12 @@
   }
 }
 
+.options-card__link:focus-visible {
+  &::after {
+    background-position: 0;
+  }
+}
+
 .options-card__link:active {
   opacity: 0.3;
 }
@@ -116,13 +122,13 @@
   @media (min-width: $desktop-width) {
     width: 70px;
     height: 97px;
-    top: 40px;
-    left: 70px;
+    top: 42px;
+    left: 67px;
   }
 }
 
 .options-card--pro::before {
-  top: 40px;
+  top: 35px;
   left: 13px;
   width: 67px;
   height: 28px;
@@ -139,7 +145,7 @@
   @media (min-width: $desktop-width) {
     width: 134px;
     height: 56px;
-    top: 70px;
+    top: 68px;
     left: 35px;
   }
 }
@@ -166,13 +172,13 @@
   @media (min-width: $desktop-width) {
     width: 100px;
     height: 100px;
-    top: 47px;
-    left: 50px;
+    top: 48px;
+    left: 52px;
   }
 }
 
 .options-card--pro::after {
-  top: 29px;
+  top: 24px;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     top: 90px;

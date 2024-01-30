@@ -3,7 +3,7 @@
   background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
-    padding: 61px 0 0;
+    padding: 60px 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -92,6 +92,13 @@
   width: 100%;
   z-index: -11;
   display: none;
+  background-color: $basic-green2;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+  // Высота в случае если не загрузится JS(карта), background-color в случае если не загрузится еще и img
 }
 
 .map__reserve img {

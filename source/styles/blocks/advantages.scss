@@ -108,3 +108,9 @@
 .advantages__item--watch::before {
   background-image: url("../../images/icons/stack.svg#icon-watch");
 }
+
+.advantages__text br {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}

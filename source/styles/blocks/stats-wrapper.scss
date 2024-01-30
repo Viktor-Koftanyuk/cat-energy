@@ -10,6 +10,10 @@
     min-height: 512px;
     margin: 0 auto;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 8px;
+  }
 }
 
 .stats-wrapper__cat {
@@ -86,6 +90,7 @@
 
   @media (min-width: $tablet-width) {
     height: 512px;
+    transform: translateX(-50%);
   }
 }
 

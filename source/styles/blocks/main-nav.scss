@@ -27,14 +27,15 @@
     flex-direction: row;
     position: static;
     text-align: center;
-    gap: 36px;
-    max-width: 500px;
+    gap: 33px;
     flex-wrap: wrap;
+    width: 440px;
   }
 
   @media (min-width: $desktop-width) {
     background-color: inherit;
-    gap: 34px;
+    gap: 32px;
+    width: 475px;
   }
 }
 
@@ -57,9 +58,11 @@
 .main-nav__item {
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
+  min-width: 100%;
 
   @media (min-width: $tablet-width) {
     border: none;
+    min-width: auto;
 
     &--current {
       position: relative;
