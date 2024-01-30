@@ -1,8 +1,11 @@
 /* GLOBAL */
+// Для <a> (ссылок) и т.п состояние disabled в utils.scss
+// Состояние ERROR input в input-wrapper.scss
 @import "./global/variables.scss";
 @import "./global/mixins.scss";
 @import "./global/fonts.scss";
 @import "./global/global.scss";
+@import "./global/utils.scss";
 
 /* BLOCKS */
 // index:
@@ -33,7 +36,6 @@
 @import "./blocks/control.scss";
 @import "./blocks/fieldset-wrapper.scss";
 @import "./blocks/input-wrapper.scss";
-@import "./blocks/title-small.scss";
 
 // catalog
 @import "./blocks/catalog.scss";
@@ -41,10 +43,3 @@
 @import "./blocks/catalog-more.scss";
 @import "./blocks/additionally.scss";
 @import "./blocks/additionally-prize.scss";
-
-
-fieldset {
-  margin: 0;
-  padding: 0;
-  border: none;
-}

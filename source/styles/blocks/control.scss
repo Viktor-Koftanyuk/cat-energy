@@ -14,17 +14,28 @@
   background-color: $color-accent;
   cursor: pointer;
   position: absolute;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .control__input[type="radio"]:checked + .control__input-mark::before {
+  content: "";
   width: 13px;
   height: 13px;
   position: absolute;
-  top: 7px;
-  left: 6px;
   background-color: $basic-green;
   border-radius: 50%;
-  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .control__input[type="checkbox"]:checked + .control__input-mark::before {
@@ -35,4 +46,27 @@
   background-image: url("../../images/icons/stack.svg#mark");
   background-position: center;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.control:hover .control__input-mark {
+  border: 2px solid #bababa;
+}
+
+.control__input:focus-visible ~ .control__input-mark {
+  outline: 5px solid $basic-green2;
+}
+
+.control__input:disabled ~ .form__label {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.control__input:disabled + .control__input-mark {
+  opacity: 0.3;
+  cursor: not-allowed;
 }

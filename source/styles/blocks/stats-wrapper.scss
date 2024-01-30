@@ -11,9 +11,9 @@
     margin: 0 auto;
   }
 
-  // @media (min-width: $desktop-width) {
-
-  // }
+  @media (min-width: $desktop-width) {
+    top: 8px;
+  }
 }
 
 .stats-wrapper__cat {
@@ -39,10 +39,6 @@
   padding: 0;
   height: 256px;
 
-  @media (min-width: $tablet-width) {
-    height: 512px;
-  }
-
   &:hover::before {
 
     background-color: $basic-green;
@@ -50,6 +46,28 @@
 
   &:hover svg {
     color: $basic-green;
+  }
+
+  &:focus-visible::before {
+    background-color: $basic-green;
+  }
+
+  &:focus-visible svg {
+    color: $basic-green;
+  }
+
+  &:active::before {
+    opacity: 0.6;
+    background-color: $basic-green2;
+  }
+
+  &:active svg {
+    opacity: 0.6;
+    color: $basic-green2;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
   }
 }
 
@@ -72,5 +90,19 @@
 
   @media (min-width: $tablet-width) {
     height: 512px;
+    transform: translateX(-50%);
+  }
+}
+
+.stats-wrapper__slider:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+
+  &::before {
+    background-color: #666666;
+  }
+
+  & svg {
+    color: #666666;
   }
 }

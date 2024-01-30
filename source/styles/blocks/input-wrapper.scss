@@ -1,11 +1,5 @@
 .input-wrapper {
   width: 100%;
-
-  &:focus-within {
-    &::after {
-      background-color: $basic-green;
-    }
-  }
 }
 
 .input-wrapper--email,
@@ -16,8 +10,8 @@
 .input-wrapper--email::after {
   content: " ";
   position: absolute;
-  top: 14px;
-  right: 13px;
+  top: 13px;
+  right: 12px;
   display: block;
   width: 20px;
   height: 20px;
@@ -26,6 +20,11 @@
   mask-repeat: no-repeat;
   background-color: #222222;
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    top: 17px;
+    right: 14px;
+  }
 }
 
 .input-wrapper--phone::after {
@@ -42,8 +41,40 @@
   background-color: #222222;
   z-index: 1;
   order: -1;
+
+  @media (min-width: $tablet-width) {
+    top: 17px;
+    right: 14px;
+  }
 }
 
 .fieldset-wrapper:focus-visible .input-wrapper--phone::after {
   background-color: #ffffff;
+}
+
+.input-wrapper:focus-within {
+  &::after {
+    background-color: $basic-green;
+  }
+}
+
+.input-wrapper:focus-visible {
+  &::after {
+    background-color: $basic-green;
+  }
+}
+
+// Ставить в обёртку div для input (Пример: <div class="input-wrapper input-wrapper--phone input-wrapper--error">
+.input-wrapper--error {
+  outline: 2px solid $error;
+}
+
+.input-wrapper--error::after {
+  background-color: $error;
+}
+
+.form__input:disabled {
+  opacity: 0.5;
+  outline: 2px solid #cdcdcd;
+  cursor: not-allowed;
 }

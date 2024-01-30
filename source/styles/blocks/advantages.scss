@@ -1,5 +1,9 @@
 .advantages {
-  padding-bottom: 53px;
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding: 12px 0;
+  }
 }
 
 .advantages__item {
@@ -30,16 +34,9 @@
 
   @media (min-width: $tablet-width) {
     line-height: 60px;
+    margin-bottom: 23px;
   }
 }
-
-// .advantages__text br {
-//   display: none;
-
-//   @media (min-width: $tablet-width) {
-//     display: block;
-//   }
-// }
 
 .advantages__list {
   list-style: none;
@@ -47,32 +44,32 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
+  align-items: baseline;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px 135px;
+    gap: 37px 60px;
     counter-reset: point;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 40px 95px;
+    gap: 40px 80px;
   }
 }
 
 .advantages__item::after {
   @media (min-width: $tablet-width) {
-
-
     content: counter(point);
     counter-increment: point 1;
     font-size: 280px;
     line-height: 1;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 10px;
+    width: 117px;
     color: $basic-grey;
     text-align: center;
     z-index: -1;
@@ -110,4 +107,10 @@
 
 .advantages__item--watch::before {
   background-image: url("../../images/icons/stack.svg#icon-watch");
+}
+
+.advantages__text br {
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
