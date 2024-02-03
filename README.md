@@ -1,5 +1,5 @@
 # Личный проект «Кэт энерджи»
-Посмотреть тут -> https://viktor-koftanyuk.github.io/2414113-cat-energy-30/index.html
+Посмотреть тут -> https://viktor-koftanyuk.github.io/2414113-cat-energy-30/
 - Студент: [Виктор Кофтанюк](https://up.htmlacademy.ru/adaptive/30/user/2414113).
 - Наставник: [Александр Медведев](https://htmlacademy.ru/profile/exteep).
 
