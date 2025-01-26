@@ -1,4 +1,4 @@
-Посмотреть тут -> https://viktor-koftanyuk.github.io/2414113-cat-energy-30/
+Посмотреть тут -> https://viktor-koftanyuk.github.io/cat-energy/
 
 # Личный проект «Кэт энерджи»
 
